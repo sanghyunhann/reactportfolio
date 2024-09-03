@@ -1,6 +1,17 @@
+import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { about } from '../../portfolio';
 import './About.css';
+
+const parseDescription = (text) => 
+  text.split('\n').map((item, index) => (
+    <React.Fragment key={`line-${index}`}>
+      {item}
+      <br />
+    </React.Fragment>
+  ));
+
+/* eslint-disable-next-line react/no-array-index-key */
 
 const About = () => {
   const { name, role, description, resume, social } = about;
@@ -17,7 +28,9 @@ const About = () => {
       
       <div className='about__content'>
         <img src={`${process.env.PUBLIC_URL}/default_img.jpg`} alt="Description" className='about__image'/>
-        <p className='about__desc'> {description} {/* description이 안전한 HTML 문자열이라면 사용 */} </p>
+        <p className='about__desc'>
+          {parseDescription(description)} {/* 줄바꿈이 처리된 description을 렌더링 */}
+        </p>
       </div>
 
       <div className='about__contact center'>
