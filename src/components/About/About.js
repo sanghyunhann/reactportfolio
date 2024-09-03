@@ -1,10 +1,9 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { about } from '../../portfolio'
-import './About.css'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { about } from '../../portfolio';
+import './About.css';
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, resume, social } = about;
 
   return (
     <div className='about center'>
@@ -15,7 +14,11 @@ const About = () => {
       )}
 
       {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>{description && description}</p>
+      
+      <div className='about__content'>
+        <img src={`${process.env.PUBLIC_URL}/default_img.jpg`} alt="Description" className='about__image'/>
+        <p className='about__desc' dangerouslySetInnerHTML={{ __html: description }} />
+      </div>
 
       <div className='about__contact center'>
         {resume && (
@@ -44,14 +47,14 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <LinkedInIcon />
+                <img src={`${process.env.PUBLIC_URL}/notion.png`} alt="LinkedIn Icon" className='link--icon-img'/>
               </a>
             )}
           </>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

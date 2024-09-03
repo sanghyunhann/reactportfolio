@@ -25,6 +25,10 @@
   margin-right: 0.8em;
 }
 
+.about .link--img {
+  margin-right: 0.8em;
+}
+
 .about .btn--outline {
   margin-right: 1em;
 }
@@ -35,3 +39,21 @@
     margin-top: 2em;
   }
 }
+
+.about__content {
+  display: flex;
+  align-items: center;
+  margin-top: 2.4em;
+}
+
+.about__image {
+  width: 100px; /* 원하는 이미지 크기로 설정 */
+  height: auto;
+  margin-right: 1.5em; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.about__desc {
+  font-size: 1rem;
+  max-width: 600px;
+}
+
