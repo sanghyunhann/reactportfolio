@@ -17,7 +17,7 @@ const About = () => {
       
       <div className='about__content'>
         <img src={`${process.env.PUBLIC_URL}/default_img.jpg`} alt="Description" className='about__image'/>
-        <p className='about__desc' dangerouslySetInnerHTML={{ __html: description }} />
+        <p className='about__desc'> {description} {/* description이 안전한 HTML 문자열이라면 사용 */} </p>
       </div>
 
       <div className='about__contact center'>
