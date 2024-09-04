@@ -1,16 +1,15 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
+
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+app.set("port", process.env.PORT || 3000);
 
-// Catch-all handler to serve the React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(app.get("port"), () => {
+  console.log(app.get("port"), "번 포트에서 대기중..");
 });
