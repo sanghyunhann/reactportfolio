@@ -5,9 +5,11 @@ const app = express();
 
 app.set("port", process.env.PORT || 3000);
 
+// 정적 파일 제공
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/public/index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.listen(app.get("port"), () => {
