@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sanghyunhann/reactportfolio.git/static/css/main.f9c1b277.chunk.css",
+    "main.js": "/sanghyunhann/reactportfolio.git/static/js/main.d64ec9d3.chunk.js",
+    "main.js.map": "/sanghyunhann/reactportfolio.git/static/js/main.d64ec9d3.chunk.js.map",
+    "runtime-main.js": "/sanghyunhann/reactportfolio.git/static/js/runtime-main.1f321033.js",
+    "runtime-main.js.map": "/sanghyunhann/reactportfolio.git/static/js/runtime-main.1f321033.js.map",
+    "static/js/2.e1777ca7.chunk.js": "/sanghyunhann/reactportfolio.git/static/js/2.e1777ca7.chunk.js",
+    "static/js/2.e1777ca7.chunk.js.map": "/sanghyunhann/reactportfolio.git/static/js/2.e1777ca7.chunk.js.map",
+    "index.html": "/sanghyunhann/reactportfolio.git/index.html",
+    "static/css/main.f9c1b277.chunk.css.map": "/sanghyunhann/reactportfolio.git/static/css/main.f9c1b277.chunk.css.map",
+    "static/js/2.e1777ca7.chunk.js.LICENSE.txt": "/sanghyunhann/reactportfolio.git/static/js/2.e1777ca7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f321033.js",
+    "static/js/2.e1777ca7.chunk.js",
+    "static/css/main.f9c1b277.chunk.css",
+    "static/js/main.d64ec9d3.chunk.js"
+  ]
+}
