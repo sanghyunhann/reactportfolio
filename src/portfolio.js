@@ -1,6 +1,6 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'http://localhost:3000/sanghyunhann',
+  githomepage: 'http://localhost:3000/sanghyunhann',
   title: 'HSH',
 }
 
@@ -10,7 +10,7 @@ const about = {
   role: 'Back End Engineer',
   description:
     '안녕하세요, 저는 한상현입니다. 😀\n새로운 기술에 관심이 많으며 동료들과의 커뮤니케이션과 상호 피드백 및 리뷰를 좋아합니다. \n현재 백엔드 개발자로 구직중입니다. 맡은 일에 자부심을 갖고 도전을 경험할 수 있는 회사에서 일하고 싶습니다.',
-  resume: 'https://example.com',
+  resume: `${process.env.PUBLIC_URL}/resume.pdf`,
   social: {
     linkedin: 'https://vintage-quill-3fd.notion.site/5315385e4c71412b8d7ab9b7430cb745?pvs=4',
     github: 'https://github.com/sanghyunhann',

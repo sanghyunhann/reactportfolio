@@ -2,7 +2,7 @@
   "name": "cleanfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/sanghyunhann",
+  "githomepage": "https://github.com/sanghyunhann",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -26,7 +26,8 @@
     "eject": "react-scripts eject --openssl-legacy-provider",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "browserslist": {
     "production": [
@@ -50,5 +51,6 @@
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.2"
-  }
+  },
+  "homepage": "https://github.com/sanghyunhann/reactportfolio.git/"
 }

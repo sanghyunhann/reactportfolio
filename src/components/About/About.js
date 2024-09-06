@@ -50,6 +50,7 @@ const About = () => {
                 className='link link--icon'
               >
                 <GitHubIcon />
+                
               </a>
             )}
 

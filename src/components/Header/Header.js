@@ -3,13 +3,13 @@ import Navbar from '../Navbar/Navbar'
 import './Header.css'
 
 const Header = () => {
-  const { homepage, title } = header
+  const { githomepage, title } = header
 
   return (
     <header className='header center'>
       <h3>
-        {homepage ? (
-          <a href={homepage} className='link'>
+        {githomepage ? (
+          <a href={githomepage} className='link'>
             {title}
           </a>
         ) : (

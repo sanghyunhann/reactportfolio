@@ -2,12 +2,14 @@
   padding: 3em 0;
   margin-top: 4em;
   text-align: center;
+  background-color: #333; /* 배경 회색 */
+  color: white; /* 글씨 흰색 */
 }
 
 .footer__link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--clr-fg);
+  color: white; /* 링크 글씨 색도 흰색으로 변경 */
 }
 
 @media (max-width: 600px) {
