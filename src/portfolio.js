@@ -37,7 +37,7 @@ const projects = [
   {
     name: '은행고객 이탈 원인 및 고객 이탈 예측',
     description:
-      '머신러닝을 이용한 이탈 고객 예측을 위한 머신러닝 프로젝트',
+      '머신러닝을 이용한 이탈 고객 예측 프로젝트',
     stack: ['PYTHON', 'NUMPY', 'PANDAS', 'SKLEARN', 'MATPLOTLIB', 'SEABORN', 'VS CODE', 'GIT-HUB'],
     sourceCode: 'https://github.com/sanghyunhann/zb.MLproject',
   },
